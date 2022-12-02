@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import RecordAll from "./record/record-all/RecordAll";
+import CountAll from "./count/count-all/CountAll";
+import HeaderAll from "./header/header-all/HeaderAll";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+        <div>
+            <HeaderAll/>
+            <div id="content">
+                <RecordAll id="record"/>
+                <CountAll id="count"/>
+            </div>
+        </div>
+    );
+  }
 }
-
-export default App;

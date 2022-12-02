@@ -1,0 +1,12 @@
+.detail{
+    width: 500px;
+    height: 73px;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    align-items: center;
+    border-radius: 15px;
+    padding:0px 35px;
+    box-shadow: 4px 4px 15px 2px rgba(212, 210, 248, 0.5);
+    margin-bottom: 12px;
+}
