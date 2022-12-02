@@ -22,6 +22,7 @@ export default class ClockCommon extends React.Component {
     doAlert = () => {
         const time = this.getCurrentTime();
         const dateTime = this.formatTime(time);
+        console.log(dateTime);
         alert(dateTime);
     }
 
