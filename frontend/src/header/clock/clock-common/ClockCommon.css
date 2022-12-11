@@ -1,0 +1,36 @@
+#choose {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+
+}
+
+#c1 {
+    background-color: #6F6AF2;
+}
+
+#c2 {
+    background-color: #DD2838;
+}
+
+#c3 {
+    background-color: #5DD75B;
+}
+
+#c4 {
+    background-color: #C5C3F7;
+}
+
+.clock{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #383576;
+}
+
+img {
+    width: 56px;
+    height: 60px;
+}
+
+

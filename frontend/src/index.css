@@ -1,0 +1,21 @@
+body {
+  background-color: #F8FAFB;
+  color: #383576;
+  width: 1000px;
+  margin: 30px 30px 30px 60px;
+}
+
+code {
+  font-family: 'Rounded Mplus 1c',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#content{
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  gap: 45px;
+}
