@@ -19,14 +19,14 @@ export default class App extends React.Component {
 
 
     render() {
-    return (
-        <div>
-            <HeaderAll setAttendance={this.setAttendance} />
-            <div id="content">
-                <RecordAll attendance={this.state.attendance} id="record"/>
-                <CountAll id="count"/>
+        return (
+            <div>
+                <HeaderAll setAttendance={this.setAttendance}/>
+                <div id="content">
+                    <RecordAll attendance={this.state.attendance} id="record"/>
+                    <CountAll id="count"/>
+                </div>
             </div>
-        </div>
-    );
-  }
+        );
+    }
 }

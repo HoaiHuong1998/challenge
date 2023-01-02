@@ -28,7 +28,6 @@ export default class ClockCommon extends React.Component {
         //setState co the goi mot callback function sau khi no update state xong
         this.setState({attendance: data}, () => {
             this.props.setAttendance(this.state.attendance)
-            console.log(this.state.attendance)
         })
     };
 

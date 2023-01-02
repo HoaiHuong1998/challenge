@@ -12,9 +12,6 @@ export default class RecordCommon extends React.Component {
     }
 
     static getDerivedStateFromProps(nextProps, prevState) {
-        //chay thu di em
-        console.log(nextProps)
-        console.log(prevState)
         //do not update when props is not changed or props attendance is null
         if (nextProps.attendance === prevState.attendance || !nextProps.attendance) {
             //return null to prevent state update
@@ -74,7 +71,7 @@ export default class RecordCommon extends React.Component {
     getHourMinuteSecond = (attendanceTime) => {
         const attendanceTimeObject = new Date(attendanceTime)
         const time =
-            this.addZeroForTime(attendanceTimeObject.getHours() + 7) + '時' +
+            this.addZeroForTime(attendanceTimeObject.getHours() - attendanceTimeObject.getTimezoneOffset()/60) + '時' +
             this.addZeroForTime(attendanceTimeObject.getMinutes()) + '分' +
             this.addZeroForTime(attendanceTimeObject.getSeconds()) + '秒'
         return time
